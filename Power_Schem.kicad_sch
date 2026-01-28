@@ -1608,25 +1608,27 @@
 		)
 		(uuid "ffe1ad10-cda2-4c6f-8e60-efd1df1ee785")
 	)
-	(label "5V_Out"
+	(hierarchical_label "V_Battery"
+		(shape input)
+		(at 54.61 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "66f0908f-87a3-4f17-b65b-d3ff3ceec87e")
+	)
+	(hierarchical_label "5V_FPGA_Power"
+		(shape input)
 		(at 259.08 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
-		(uuid "407d10ce-8c82-4a7f-9136-78e015204027")
-	)
-	(label "V_Battery"
-		(at 54.61 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b6191373-8a53-4e44-9365-8a68a62f9205")
+		(uuid "d950bada-0dc8-45ec-a351-bef022c867dc")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -1637,7 +1639,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "051613ce-9084-4038-a7c9-ca558d9b5f89")
-		(property "Reference" "Cboot"
+		(property "Reference" "Cboot2"
 			(at 161.798 55.499 0)
 			(effects
 				(font
@@ -1691,7 +1693,7 @@
 		(instances
 			(project ""
 				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/307a8eb5-3be3-461a-96d2-9ca06d1bde49"
-					(reference "Cboot")
+					(reference "Cboot2")
 					(unit 1)
 				)
 			)
@@ -1912,7 +1914,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2b26ab5f-6442-416d-b1f8-da96156f7b2c")
-		(property "Reference" "Rfbt"
+		(property "Reference" "Rfbt2"
 			(at 199.39 70.358 0)
 			(effects
 				(font
@@ -1964,7 +1966,7 @@
 		(instances
 			(project "FPGA_Anemometer_PCB"
 				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/307a8eb5-3be3-461a-96d2-9ca06d1bde49"
-					(reference "Rfbt")
+					(reference "Rfbt2")
 					(unit 1)
 				)
 			)
@@ -1980,7 +1982,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "347213f8-afb9-4da2-b5fc-2ca278ca4675")
-		(property "Reference" "Cinx"
+		(property "Reference" "Cinx1"
 			(at 113.03 73.6662 0)
 			(effects
 				(font
@@ -2034,7 +2036,7 @@
 		(instances
 			(project ""
 				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/307a8eb5-3be3-461a-96d2-9ca06d1bde49"
-					(reference "Cinx")
+					(reference "Cinx1")
 					(unit 1)
 				)
 			)
@@ -2050,7 +2052,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45d0c095-94fd-4a9c-ae1c-43d632547005")
-		(property "Reference" "Cin"
+		(property "Reference" "Cin3"
 			(at 99.06 73.6662 0)
 			(effects
 				(font
@@ -2104,7 +2106,7 @@
 		(instances
 			(project "FPGA_Anemometer_PCB"
 				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/307a8eb5-3be3-461a-96d2-9ca06d1bde49"
-					(reference "Cin")
+					(reference "Cin3")
 					(unit 1)
 				)
 			)
@@ -2120,7 +2122,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ee7b719-301d-4074-9ab2-b1137f3d0776")
-		(property "Reference" "Coutx"
+		(property "Reference" "Coutx1"
 			(at 210.82 74.9362 0)
 			(effects
 				(font
@@ -2174,7 +2176,7 @@
 		(instances
 			(project "FPGA_Anemometer_PCB"
 				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/307a8eb5-3be3-461a-96d2-9ca06d1bde49"
-					(reference "Coutx")
+					(reference "Coutx1")
 					(unit 1)
 				)
 			)
@@ -2260,7 +2262,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83110fe9-0593-4e0a-a97c-8908cc58a4bb")
-		(property "Reference" "Cout"
+		(property "Reference" "Cout3"
 			(at 224.79 74.9362 0)
 			(effects
 				(font
@@ -2314,7 +2316,7 @@
 		(instances
 			(project "FPGA_Anemometer_PCB"
 				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/307a8eb5-3be3-461a-96d2-9ca06d1bde49"
-					(reference "Cout")
+					(reference "Cout3")
 					(unit 1)
 				)
 			)
@@ -2329,7 +2331,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bfffd771-2869-427f-b0a7-40ee3a4c6fe1")
-		(property "Reference" "Rpg"
+		(property "Reference" "Rpg1"
 			(at 162.306 74.803 90)
 			(effects
 				(font
@@ -2381,7 +2383,7 @@
 		(instances
 			(project ""
 				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/307a8eb5-3be3-461a-96d2-9ca06d1bde49"
-					(reference "Rpg")
+					(reference "Rpg1")
 					(unit 1)
 				)
 			)
@@ -2397,7 +2399,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d234619a-ee82-48a1-a5ad-f8ed936e6ab2")
-		(property "Reference" "Cvcc"
+		(property "Reference" "Cvcc1"
 			(at 127 78.7462 0)
 			(effects
 				(font
@@ -2451,7 +2453,7 @@
 		(instances
 			(project ""
 				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/307a8eb5-3be3-461a-96d2-9ca06d1bde49"
-					(reference "Cvcc")
+					(reference "Cvcc1")
 					(unit 1)
 				)
 			)
