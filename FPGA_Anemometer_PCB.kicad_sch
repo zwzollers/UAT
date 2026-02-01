@@ -1938,16 +1938,6 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 72.39) (xy 157.48 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d4c1de1-53ec-42a6-939a-134073571d6f")
-	)
-	(wire
-		(pts
 			(xy 109.22 54.61) (xy 130.175 54.61)
 		)
 		(stroke
@@ -1995,16 +1985,6 @@
 			(type default)
 		)
 		(uuid "cefa007f-e8e6-43ff-abac-a9437e6fe5f5")
-	)
-	(wire
-		(pts
-			(xy 152.4 72.39) (xy 157.48 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9071ec6-b627-411c-ae7a-07889e75a06e")
 	)
 	(wire
 		(pts
@@ -2232,7 +2212,7 @@
 				)
 			)
 		)
-		(property "Footprint" "YO0221500000G:CONN_YO0221500000G_AMP"
+		(property "Footprint" "footprints:CONN_YO0221500000G_AMP"
 			(at 57.15 60.96 0)
 			(effects
 				(font
@@ -2718,73 +2698,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 157.48 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e7ba6b5c-e5ae-4741-bd19-55c9ef6b8c14")
-		(property "Reference" "#PWR04"
-			(at 157.48 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 157.48 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 157.48 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.48 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 157.48 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2c26d11d-9eda-4606-8d3c-87ed35a1ddbf")
-		)
-		(instances
-			(project "FPGA_Anemometer_PCB"
-				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "2026-01-23_14-54-26:YO0221500000G")
 		(at 55.88 85.09 0)
 		(unit 1)
@@ -2809,7 +2722,7 @@
 				)
 			)
 		)
-		(property "Footprint" "YO0221500000G:CONN_YO0221500000G_AMP"
+		(property "Footprint" "footprints:CONN_YO0221500000G_AMP"
 			(at 55.88 85.09 0)
 			(effects
 				(font

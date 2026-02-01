@@ -1797,16 +1797,6 @@
 		)
 		(uuid "3e131bdb-a21d-4b68-9728-6c45cc49eca8")
 	)
-	(text "PGA460"
-		(exclude_from_sim no)
-		(at 121.158 81.915 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "87f7e4c2-b67b-4a43-b125-d153e13659db")
-	)
 	(junction
 		(at 173.99 83.82)
 		(diameter 0)
@@ -1814,16 +1804,16 @@
 		(uuid "133b77ae-3ba2-4eee-939b-384a947a15aa")
 	)
 	(junction
-		(at 220.98 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "134332e2-541a-415a-a273-ec8a185b1336")
-	)
-	(junction
 		(at 139.7 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "15ebf172-4930-4052-b564-ba8294ab2ed4")
+	)
+	(junction
+		(at 205.74 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ced8fb6-c7f9-443a-a209-e7dc7c2b5b0a")
 	)
 	(junction
 		(at 237.49 100.33)
@@ -1921,7 +1911,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 83.82) (xy 220.98 83.82)
+			(xy 228.6 83.82) (xy 205.74 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1971,7 +1961,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 86.36) (xy 198.12 86.36)
+			(xy 191.77 86.36) (xy 199.39 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2011,6 +2001,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 86.36) (xy 215.9 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "390ec596-a77a-4037-a24b-bf2b7a7d7ba5")
+	)
+	(wire
+		(pts
 			(xy 133.35 111.76) (xy 139.7 111.76)
 		)
 		(stroke
@@ -2028,16 +2028,6 @@
 			(type default)
 		)
 		(uuid "403c4c25-0908-4792-b2a2-ae3799a03c02")
-	)
-	(wire
-		(pts
-			(xy 173.99 83.82) (xy 209.55 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "425dac89-bda8-42d4-be8d-ed8e4ab2b5ae")
 	)
 	(wire
 		(pts
@@ -2071,13 +2061,23 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 88.9) (xy 167.64 88.9)
+			(xy 133.35 88.9) (xy 153.67 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "543fa1b9-1986-4432-a68d-be4c21aa47f3")
+	)
+	(wire
+		(pts
+			(xy 205.74 83.82) (xy 204.47 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57a6cf8e-a03d-460a-8a43-0e5f9496d438")
 	)
 	(wire
 		(pts
@@ -2201,6 +2201,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 86.36) (xy 157.48 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ddfba72-3518-4c55-a4f4-0bbacbb1d7a0")
+	)
+	(wire
+		(pts
 			(xy 173.99 73.66) (xy 182.88 73.66)
 		)
 		(stroke
@@ -2231,6 +2241,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 88.9) (xy 167.64 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84121d49-b960-489b-a47a-b3283f8fa691")
+	)
+	(wire
+		(pts
 			(xy 139.7 60.96) (xy 146.05 60.96)
 		)
 		(stroke
@@ -2241,13 +2261,13 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 74.93) (xy 220.98 83.82)
+			(xy 205.74 74.93) (xy 205.74 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "889aadf3-a500-46ef-bcf3-7cd1f9f511c8")
+		(uuid "8da63ef1-fd37-432c-9f4f-6172724166d5")
 	)
 	(wire
 		(pts
@@ -2351,6 +2371,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 83.82) (xy 173.99 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3644e06-40d2-434e-8922-0d751d7d682e")
+	)
+	(wire
+		(pts
 			(xy 191.77 81.28) (xy 191.77 86.36)
 		)
 		(stroke
@@ -2391,7 +2421,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 86.36) (xy 157.48 86.36)
+			(xy 133.35 86.36) (xy 143.51 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2428,16 +2458,6 @@
 			(type default)
 		)
 		(uuid "c89ce85d-bfe7-4902-8337-502c4adfdbf0")
-	)
-	(wire
-		(pts
-			(xy 203.2 86.36) (xy 215.9 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ccaa7e55-3108-4043-ba94-058c873f1d6a")
 	)
 	(wire
 		(pts
@@ -2518,16 +2538,6 @@
 			(type default)
 		)
 		(uuid "e8919908-3dab-4fb2-9cb4-8d5698e40027")
-	)
-	(wire
-		(pts
-			(xy 220.98 83.82) (xy 214.63 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e92c76a6-815e-4690-9315-ed97adb3fe86")
 	)
 	(wire
 		(pts
@@ -2714,73 +2724,6 @@
 			(justify right)
 		)
 		(uuid "9e9359c8-abcc-4720-92ff-e80c672885e6")
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 200.66 86.36 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1212f2d7-d5bd-41aa-a56b-e538981e15fe")
-		(property "Reference" "R4"
-			(at 200.914 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 200.914 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 200.66 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 200.66 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 200.66 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "db93b262-3bab-4cda-b400-5a73a16095d7")
-		)
-		(pin "1"
-			(uuid "41d4858e-e306-456b-9f85-ff90cfaafa96")
-		)
-		(instances
-			(project "FPGA_Anemometer_PCB"
-				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3354,7 +3297,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "YO0221500000G:CONN_YO0221500000G_AMP"
+		(property "Footprint" "footprints:CONN_YO0221500000G_AMP"
 			(at 146.05 60.96 0)
 			(effects
 				(font
@@ -3857,6 +3800,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 146.05 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ec5e9d0-57ea-4ce5-b75d-f3fa8cfa0cf6")
+		(property "Reference" "R7"
+			(at 146.05 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 146.05 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 146.05 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 146.05 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5f6f3758-a108-49cd-9dfd-9f659cac8e83")
+		)
+		(pin "1"
+			(uuid "37c30b9e-1e59-48f3-beb5-9a5c2a4129ef")
+		)
+		(instances
+			(project ""
+				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 237.49 101.6 0)
 		(unit 1)
@@ -3948,7 +3959,7 @@
 				)
 			)
 		)
-		(property "Footprint" "YO0221500000G:CONN_YO0221500000G_AMP"
+		(property "Footprint" "footprints:CONN_YO0221500000G_AMP"
 			(at 260.35 83.82 0)
 			(effects
 				(font
@@ -4052,6 +4063,73 @@
 			(project "FPGA_Anemometer_PCB"
 				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
 					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 201.93 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a9c21189-2bc4-4be7-bce5-f85504aea12c")
+		(property "Reference" "R10"
+			(at 202.057 88.773 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 202.184 90.678 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 201.93 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 201.93 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 201.93 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "36d17593-4afa-4020-b1f9-f98504b56b39")
+		)
+		(pin "1"
+			(uuid "e784d79b-48ee-4573-aa5c-543e2013245a")
+		)
+		(instances
+			(project "FPGA_Anemometer_PCB"
+				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -4349,74 +4427,6 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 212.09 83.82 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b8c4dc5b-3124-43df-a44f-7e7c079a0d7a")
-		(property "Reference" "R3"
-			(at 212.09 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 212.09 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 212.09 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 212.09 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 212.09 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3b03552f-dddd-4023-b0fa-0dd1594a32a8")
-		)
-		(pin "1"
-			(uuid "ceb35069-50ba-443d-aaed-16980e8a3284")
-		)
-		(instances
-			(project "FPGA_Anemometer_PCB"
-				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
 		(at 124.46 60.96 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4485,7 +4495,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
-		(at 215.9 74.93 0)
+		(at 210.82 74.93 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4494,7 +4504,7 @@
 		(fields_autoplaced yes)
 		(uuid "bd728618-8f6f-4cff-b6ce-fb2b86ad0e70")
 		(property "Reference" "J5"
-			(at 216.535 69.85 0)
+			(at 210.185 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4502,7 +4512,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01_Pin"
-			(at 216.535 72.39 0)
+			(at 210.185 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4510,7 +4520,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 215.9 74.93 0)
+			(at 210.82 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4519,7 +4529,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 215.9 74.93 0)
+			(at 210.82 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4528,7 +4538,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 215.9 74.93 0)
+			(at 210.82 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4543,6 +4553,74 @@
 			(project ""
 				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 201.93 83.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d46fda01-7879-4f76-b17a-97e58c1e854a")
+		(property "Reference" "R9"
+			(at 201.93 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 201.93 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 201.93 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 201.93 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 201.93 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e7db2779-3574-48ca-8a23-aa3e3598ae53")
+		)
+		(pin "1"
+			(uuid "490c1bd6-8cb6-47be-8cb5-4cf9da469805")
+		)
+		(instances
+			(project "FPGA_Anemometer_PCB"
+				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -4610,6 +4688,73 @@
 			(project "FPGA_Anemometer_PCB"
 				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 156.21 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f51fd8e9-e02a-447b-b268-efdb455c2c51")
+		(property "Reference" "R8"
+			(at 156.337 91.313 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 156.464 93.218 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 156.21 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 156.21 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5e72961d-a008-4a05-8128-027a76d91748")
+		)
+		(pin "1"
+			(uuid "80e31eeb-3218-407d-823e-8391a8e08fe1")
+		)
+		(instances
+			(project "FPGA_Anemometer_PCB"
+				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
+					(reference "R8")
 					(unit 1)
 				)
 			)

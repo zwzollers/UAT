@@ -1608,56 +1608,6 @@
 		)
 		(uuid "ffe1ad10-cda2-4c6f-8e60-efd1df1ee785")
 	)
-	(label "FB"
-		(at 161.29 69.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5044b742-1cb8-44fb-87ed-7dccaf909fce")
-	)
-	(label "SW"
-		(at 156.21 64.77 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "77611441-b39d-45d6-9f29-416d56e99361")
-	)
-	(label "BOOT"
-		(at 152.4 53.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8fffedb2-cddd-4349-b344-1650f4af2c9b")
-	)
-	(label "PG"
-		(at 153.67 72.39 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dc4c16d5-d321-4d4f-9010-6bb945cdad2d")
-	)
-	(label "VCC"
-		(at 124.46 72.39 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ee4ef460-3276-46d6-955b-5d91a890a141")
-	)
 	(hierarchical_label "V_Battery"
 		(shape input)
 		(at 54.61 62.23 180)
@@ -2260,7 +2210,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm"
 			(at 247.65 76.2 0)
 			(effects
 				(font
@@ -2330,7 +2280,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm"
 			(at 222.25 76.2 0)
 			(effects
 				(font
@@ -2604,7 +2554,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm"
 			(at 234.95 76.2 0)
 			(effects
 				(font
@@ -2830,7 +2780,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SRP1038A-150M:IND_SRP1038A_BRN"
+		(property "Footprint" ""
 			(at 171.45 64.77 0)
 			(effects
 				(font
