@@ -422,7 +422,7 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "PGA460:PW16_TEX"
 				(at 0 0 0)
 				(effects
 					(font
@@ -498,7 +498,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at -12.7 1.27 0)
 					(length 2.54)
 					(name "IOREG"
@@ -1797,11 +1797,15 @@
 		)
 		(uuid "3e131bdb-a21d-4b68-9728-6c45cc49eca8")
 	)
-	(junction
-		(at 173.99 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "00bef0ef-3eb2-4637-ae25-4ea34fc2651c")
+	(text "PGA460"
+		(exclude_from_sim no)
+		(at 121.158 81.915 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "87f7e4c2-b67b-4a43-b125-d153e13659db")
 	)
 	(junction
 		(at 173.99 83.82)
@@ -1810,28 +1814,22 @@
 		(uuid "133b77ae-3ba2-4eee-939b-384a947a15aa")
 	)
 	(junction
+		(at 220.98 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "134332e2-541a-415a-a273-ec8a185b1336")
+	)
+	(junction
 		(at 139.7 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "15ebf172-4930-4052-b564-ba8294ab2ed4")
 	)
 	(junction
-		(at 205.74 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5ced8fb6-c7f9-443a-a209-e7dc7c2b5b0a")
-	)
-	(junction
 		(at 237.49 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "61aa48e6-3fdc-4474-9c65-05953161f92f")
-	)
-	(junction
-		(at 182.88 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "670a2413-c548-4e16-9471-496d3c64b406")
 	)
 	(junction
 		(at 157.48 86.36)
@@ -1850,12 +1848,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9a54f93c-a576-45b3-a8bf-0611b6a2af1a")
-	)
-	(junction
-		(at 191.77 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9c360733-cf9f-48a3-9df1-6c2ef10af1bb")
 	)
 	(junction
 		(at 191.77 86.36)
@@ -1889,26 +1881,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 97.79) (xy 182.88 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01fe564d-1583-4050-8377-9d2e8619f313")
-	)
-	(wire
-		(pts
-			(xy 173.99 95.25) (xy 173.99 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "024c0b5d-9448-4bd8-ad0d-9ae063b7642b")
-	)
-	(wire
-		(pts
 			(xy 106.68 86.36) (xy 109.22 86.36)
 		)
 		(stroke
@@ -1939,16 +1911,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 78.105) (xy 237.49 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12ec67dc-4123-47f2-bfa0-a2c96e18ec50")
-	)
-	(wire
-		(pts
 			(xy 127 60.96) (xy 134.62 60.96)
 		)
 		(stroke
@@ -1959,7 +1921,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 83.82) (xy 205.74 83.82)
+			(xy 228.6 83.82) (xy 220.98 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2009,7 +1971,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 86.36) (xy 199.39 86.36)
+			(xy 191.77 86.36) (xy 198.12 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2049,16 +2011,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 86.36) (xy 215.9 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "390ec596-a77a-4037-a24b-bf2b7a7d7ba5")
-	)
-	(wire
-		(pts
 			(xy 133.35 111.76) (xy 139.7 111.76)
 		)
 		(stroke
@@ -2069,16 +2021,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 86.36) (xy 173.99 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3de5e17f-b690-4b93-8460-3fccf1f5e2f4")
-	)
-	(wire
-		(pts
 			(xy 139.7 105.41) (xy 139.7 107.95)
 		)
 		(stroke
@@ -2086,6 +2028,16 @@
 			(type default)
 		)
 		(uuid "403c4c25-0908-4792-b2a2-ae3799a03c02")
+	)
+	(wire
+		(pts
+			(xy 173.99 83.82) (xy 209.55 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "425dac89-bda8-42d4-be8d-ed8e4ab2b5ae")
 	)
 	(wire
 		(pts
@@ -2119,23 +2071,13 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 88.9) (xy 153.67 88.9)
+			(xy 133.35 88.9) (xy 167.64 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "543fa1b9-1986-4432-a68d-be4c21aa47f3")
-	)
-	(wire
-		(pts
-			(xy 205.74 83.82) (xy 204.47 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57a6cf8e-a03d-460a-8a43-0e5f9496d438")
 	)
 	(wire
 		(pts
@@ -2259,16 +2201,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 86.36) (xy 157.48 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ddfba72-3518-4c55-a4f4-0bbacbb1d7a0")
-	)
-	(wire
-		(pts
 			(xy 173.99 73.66) (xy 182.88 73.66)
 		)
 		(stroke
@@ -2299,16 +2231,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 88.9) (xy 167.64 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84121d49-b960-489b-a47a-b3283f8fa691")
-	)
-	(wire
-		(pts
 			(xy 139.7 60.96) (xy 146.05 60.96)
 		)
 		(stroke
@@ -2319,13 +2241,13 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 74.93) (xy 205.74 83.82)
+			(xy 220.98 74.93) (xy 220.98 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8da63ef1-fd37-432c-9f4f-6172724166d5")
+		(uuid "889aadf3-a500-46ef-bcf3-7cd1f9f511c8")
 	)
 	(wire
 		(pts
@@ -2356,26 +2278,6 @@
 			(type default)
 		)
 		(uuid "92c9e58f-b440-4ff6-9288-b887f5bc0a22")
-	)
-	(wire
-		(pts
-			(xy 182.88 97.79) (xy 191.77 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "949c3f0f-baa4-44b1-af9c-3bb4f64593ea")
-	)
-	(wire
-		(pts
-			(xy 19.05 21.59) (xy 19.05 19.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "954794c6-63f5-4f41-a046-588cc099971b")
 	)
 	(wire
 		(pts
@@ -2449,26 +2351,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 97.79) (xy 191.77 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b07ae0ed-910c-4016-bb93-1d222036d0ee")
-	)
-	(wire
-		(pts
-			(xy 199.39 83.82) (xy 173.99 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3644e06-40d2-434e-8922-0d751d7d682e")
-	)
-	(wire
-		(pts
 			(xy 191.77 81.28) (xy 191.77 86.36)
 		)
 		(stroke
@@ -2479,7 +2361,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 78.105) (xy 238.76 78.74)
+			(xy 238.76 76.2) (xy 238.76 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2499,16 +2381,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 78.105) (xy 237.49 78.105)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bbf55f82-a5df-4013-bc3f-322c1ff905dd")
-	)
-	(wire
-		(pts
 			(xy 74.93 92.71) (xy 109.22 92.71)
 		)
 		(stroke
@@ -2519,7 +2391,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 86.36) (xy 143.51 86.36)
+			(xy 133.35 86.36) (xy 157.48 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2559,6 +2431,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 86.36) (xy 215.9 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccaa7e55-3108-4043-ba94-058c873f1d6a")
+	)
+	(wire
+		(pts
 			(xy 173.99 81.28) (xy 173.99 83.82)
 		)
 		(stroke
@@ -2576,16 +2458,6 @@
 			(type default)
 		)
 		(uuid "ce9adeee-5233-44f5-9925-7e1283d606a3")
-	)
-	(wire
-		(pts
-			(xy 191.77 88.9) (xy 191.77 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5b591df-22a4-451e-be18-37068cb66068")
 	)
 	(wire
 		(pts
@@ -2649,23 +2521,13 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 100.33) (xy 182.88 97.79)
+			(xy 220.98 83.82) (xy 214.63 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ea20720a-e7cb-4cc4-adfc-d316514c2b10")
-	)
-	(wire
-		(pts
-			(xy 19.05 19.05) (xy 22.86 19.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec247a05-3099-44bc-ad8c-e11d8e420eee")
+		(uuid "e92c76a6-815e-4690-9315-ed97adb3fe86")
 	)
 	(wire
 		(pts
@@ -2708,7 +2570,7 @@
 		(uuid "4bf212af-e2f3-4af2-b3c8-0017176875de")
 	)
 	(label "VX"
-		(at 237.49 76.2 0)
+		(at 238.76 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2727,16 +2589,6 @@
 		)
 		(uuid "8d0efb14-16f6-4315-a454-efa0148bbcb7")
 	)
-	(label "GND"
-		(at 60.96 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "93f81729-a77e-4b00-91eb-26d4c7af2b03")
-	)
 	(label "IOREG"
 		(at 220.98 93.98 0)
 		(effects
@@ -2746,6 +2598,16 @@
 			(justify left bottom)
 		)
 		(uuid "a18c1719-630c-4de1-92bb-01f8c47aefef")
+	)
+	(label "IOREG"
+		(at 182.88 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b4ed0da5-1797-4089-ba40-2381f26bb964")
 	)
 	(label "TXD"
 		(at 139.7 95.25 0)
@@ -2787,36 +2649,6 @@
 		)
 		(uuid "f0b085c5-6cd8-44a4-8578-6761b3d4f347")
 	)
-	(label "GND"
-		(at 22.86 19.05 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f4482986-76eb-4bb2-b173-1c7148a0a42f")
-	)
-	(label "GND"
-		(at 97.79 86.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f54b3b8d-f63c-4671-b277-4af23c6643e2")
-	)
-	(label "GND"
-		(at 82.55 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fe00f024-2200-481b-8cea-8d19281db8b1")
-	)
 	(hierarchical_label "VX"
 		(shape input)
 		(at 182.88 128.27 0)
@@ -2827,17 +2659,6 @@
 			(justify left)
 		)
 		(uuid "0ab33ac8-99e6-4910-842d-af515e0e2905")
-	)
-	(hierarchical_label "VX"
-		(shape input)
-		(at 182.88 69.85 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "41d5e870-138b-4e33-8c24-f9e1a1627699")
 	)
 	(hierarchical_label "TXD"
 		(shape input)
@@ -2896,6 +2717,140 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
+		(at 200.66 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1212f2d7-d5bd-41aa-a56b-e538981e15fe")
+		(property "Reference" "R4"
+			(at 200.914 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 200.914 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 200.66 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 200.66 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 200.66 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "db93b262-3bab-4cda-b400-5a73a16095d7")
+		)
+		(pin "1"
+			(uuid "41d4858e-e306-456b-9f85-ff90cfaafa96")
+		)
+		(instances
+			(project "FPGA_Anemometer_PCB"
+				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 60.96 92.71 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "12fd3374-380e-409e-b138-c0b5def58a3f")
+		(property "Reference" "#PWR01"
+			(at 54.61 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 55.88 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 60.96 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2af4f2bc-7485-48a7-aa74-6f5e18aa9d2b")
+		)
+		(instances
+			(project ""
+				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
 		(at 191.77 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2913,7 +2868,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33.2k"
+		(property "Value" "4.7k"
 			(at 194.31 80.0099 0)
 			(effects
 				(font
@@ -2922,7 +2877,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 191.77 78.74 0)
 			(effects
 				(font
@@ -2983,7 +2938,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33.2k"
+		(property "Value" "4.7k"
 			(at 176.53 80.0099 0)
 			(effects
 				(font
@@ -2992,7 +2947,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 173.99 78.74 0)
 			(effects
 				(font
@@ -3035,72 +2990,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 19.05 21.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2bee4419-e8f3-48a3-bf73-bdb9deeeee13")
-		(property "Reference" "#PWR02"
-			(at 19.05 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 19.05 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 19.05 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 19.05 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 19.05 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fbed753f-e873-4802-8b08-561b4b94cd3b")
-		)
-		(instances
-			(project "FPGA_Anemometer_PCB"
-				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
 		(at 162.56 81.28 180)
 		(unit 1)
@@ -3126,7 +3015,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 162.56 81.28 0)
 			(effects
 				(font
@@ -3260,7 +3149,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 252.73 99.06 0)
 			(effects
 				(font
@@ -3328,7 +3217,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 104.14 86.36 0)
 			(effects
 				(font
@@ -3371,35 +3260,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 173.99 92.71 0)
+		(lib_id "power:GND")
+		(at 97.79 86.36 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "434129c5-e131-4b10-b418-05eaab2a4f06")
-		(property "Reference" "R3"
-			(at 176.53 91.4399 0)
+		(uuid "476fd830-0753-415a-b881-26270189228e")
+		(property "Reference" "#PWR011"
+			(at 91.44 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "2.7k"
-			(at 176.53 93.9799 0)
+		(property "Value" "GND"
+			(at 92.71 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 92.71 0)
+			(at 97.79 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3407,8 +3296,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 173.99 92.71 0)
+		(property "Datasheet" ""
+			(at 97.79 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3416,8 +3305,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
-			(at 173.99 92.71 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 97.79 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3426,15 +3315,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b1620cb3-a230-4024-a9c9-823a101cde2d")
-		)
-		(pin "2"
-			(uuid "7547d2ee-51c7-45e5-8414-e9ffb50d59b1")
+			(uuid "5f1336b5-7244-47ca-b7a8-4e8f396e73ba")
 		)
 		(instances
 			(project "FPGA_Anemometer_PCB"
 				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
-					(reference "R3")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -3468,7 +3354,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footprints:CONN_YO0221500000G_AMP"
+		(property "Footprint" "YO0221500000G:CONN_YO0221500000G_AMP"
 			(at 146.05 60.96 0)
 			(effects
 				(font
@@ -3649,7 +3535,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 88.9 88.9 0)
 			(effects
 				(font
@@ -3717,7 +3603,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 			(at 170.18 125.73 0)
 			(effects
 				(font
@@ -3793,7 +3679,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 96.52 97.79 0)
 			(effects
 				(font
@@ -3928,7 +3814,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 68.58 92.71 0)
 			(effects
 				(font
@@ -3965,144 +3851,6 @@
 			(project "FPGA_Anemometer_PCB"
 				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 146.05 86.36 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ec5e9d0-57ea-4ce5-b75d-f3fa8cfa0cf6")
-		(property "Reference" "R7"
-			(at 146.05 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 146.05 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 146.05 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 146.05 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 146.05 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5f6f3758-a108-49cd-9dfd-9f659cac8e83")
-		)
-		(pin "1"
-			(uuid "37c30b9e-1e59-48f3-beb5-9a5c2a4129ef")
-		)
-		(instances
-			(project ""
-				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 191.77 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "85c0597c-b283-426e-b04a-92abb8bc321f")
-		(property "Reference" "R4"
-			(at 194.31 91.4399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2.7k"
-			(at 194.31 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 191.77 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 191.77 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 191.77 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a10f1d8c-8a1a-4b2a-8446-af42199f2383")
-		)
-		(pin "2"
-			(uuid "12423646-6a70-41a3-b7ad-8f01cd98720d")
-		)
-		(instances
-			(project "FPGA_Anemometer_PCB"
-				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
-					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -4200,7 +3948,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:CONN_YO0221500000G_AMP"
+		(property "Footprint" "YO0221500000G:CONN_YO0221500000G_AMP"
 			(at 260.35 83.82 0)
 			(effects
 				(font
@@ -4270,7 +4018,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 210.82 96.52 0)
 			(effects
 				(font
@@ -4310,73 +4058,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 201.93 86.36 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a9c21189-2bc4-4be7-bce5-f85504aea12c")
-		(property "Reference" "R10"
-			(at 202.057 88.773 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 202.184 90.678 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 201.93 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 201.93 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 201.93 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "36d17593-4afa-4020-b1f9-f98504b56b39")
-		)
-		(pin "1"
-			(uuid "e784d79b-48ee-4573-aa5c-543e2013245a")
-		)
-		(instances
-			(project "FPGA_Anemometer_PCB"
-				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
 		(at 162.56 99.06 0)
 		(unit 1)
@@ -4402,7 +4083,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 162.56 99.06 0)
 			(effects
 				(font
@@ -4449,10 +4130,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ab6da004-a606-47c6-ad33-79964039fce0")
 		(property "Reference" "U2"
-			(at 240.9033 76.2 0)
+			(at 240.919 77.343 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4461,7 +4141,7 @@
 			)
 		)
 		(property "Value" "DRV8870DDA"
-			(at 240.9033 78.74 0)
+			(at 240.919 79.883 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4625,7 +4305,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 137.16 60.96 0)
 			(effects
 				(font
@@ -4669,6 +4349,74 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
+		(at 212.09 83.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b8c4dc5b-3124-43df-a44f-7e7c079a0d7a")
+		(property "Reference" "R3"
+			(at 212.09 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 212.09 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 212.09 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 212.09 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3b03552f-dddd-4023-b0fa-0dd1594a32a8")
+		)
+		(pin "1"
+			(uuid "ceb35069-50ba-443d-aaed-16980e8a3284")
+		)
+		(instances
+			(project "FPGA_Anemometer_PCB"
+				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
 		(at 124.46 60.96 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4693,7 +4441,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 124.46 60.96 0)
 			(effects
 				(font
@@ -4737,7 +4485,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
-		(at 210.82 74.93 180)
+		(at 215.9 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4746,7 +4494,7 @@
 		(fields_autoplaced yes)
 		(uuid "bd728618-8f6f-4cff-b6ce-fb2b86ad0e70")
 		(property "Reference" "J5"
-			(at 210.185 69.85 0)
+			(at 216.535 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4754,15 +4502,15 @@
 			)
 		)
 		(property "Value" "Conn_01x01_Pin"
-			(at 210.185 72.39 0)
+			(at 216.535 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 210.82 74.93 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 215.9 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4771,7 +4519,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 210.82 74.93 0)
+			(at 215.9 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4780,7 +4528,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 210.82 74.93 0)
+			(at 215.9 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4801,85 +4549,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 201.93 83.82 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d46fda01-7879-4f76-b17a-97e58c1e854a")
-		(property "Reference" "R9"
-			(at 201.93 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 201.93 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 201.93 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 201.93 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 201.93 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e7db2779-3574-48ca-8a23-aa3e3598ae53")
-		)
-		(pin "1"
-			(uuid "490c1bd6-8cb6-47be-8cb5-4cf9da469805")
-		)
-		(instances
-			(project "FPGA_Anemometer_PCB"
-				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 182.88 100.33 0)
+		(at 82.55 88.9 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e55a77e2-f128-4fa8-bca6-c3f5c6b50cef")
-		(property "Reference" "#PWR04"
-			(at 182.88 106.68 0)
+		(uuid "e12813f2-b965-4c4e-98bb-b5afa7fd77b6")
+		(property "Reference" "#PWR02"
+			(at 76.2 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4888,7 +4568,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 182.88 105.41 0)
+			(at 77.47 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4897,7 +4577,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 100.33 0)
+			(at 82.55 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4906,7 +4586,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 100.33 0)
+			(at 82.55 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4915,7 +4595,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 182.88 100.33 0)
+			(at 82.55 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4924,79 +4604,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "32b21730-1cb6-4fa6-bb20-8aa27597e61c")
+			(uuid "468b396c-791d-484e-9fa4-ed00408be5f6")
 		)
 		(instances
 			(project "FPGA_Anemometer_PCB"
 				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 156.21 88.9 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f51fd8e9-e02a-447b-b268-efdb455c2c51")
-		(property "Reference" "R8"
-			(at 156.337 91.313 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 156.464 93.218 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 156.21 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5e72961d-a008-4a05-8128-027a76d91748")
-		)
-		(pin "1"
-			(uuid "80e31eeb-3218-407d-823e-8391a8e08fe1")
-		)
-		(instances
-			(project "FPGA_Anemometer_PCB"
-				(path "/f02116dc-3d6e-45e4-b4ab-5ea900e13651/db7f220d-2f8e-4546-833f-e3cc028b2f3a"
-					(reference "R8")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
