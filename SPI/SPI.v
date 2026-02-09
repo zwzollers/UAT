@@ -1,11 +1,11 @@
-//Derived from fpgas4fun.com
+//Adapted from fpga4fun.com
 //SPI slave module
 module SPI(ar, clk, sck, mosi, miso, cs);
 	input ar;		//reset
 	input clk;		//system clock
 	input sck;		//SPI master clock
 	input mosi;		//SPI MOSI
-	input cs		//SPI chip select
+	input cs;		//SPI chip select
 	output miso;	//SPI MISO
 	
 	reg [2:0] sck_reg; //sck shift register
@@ -97,6 +97,7 @@ module SPI(ar, clk, sck, mosi, miso, cs);
 		if(~ar)
 			begin
 			sent_data <= 8'd0;
+			
 			end
 		else
 			begin
@@ -104,6 +105,7 @@ module SPI(ar, clk, sck, mosi, miso, cs);
 				begin
 				if(cs_falling_edge)
 					sent_data <= message_count; //send message count when transmission begins
+					//sent_data <= 8'hF5; //Temporary MISO test 
 				else
 					//transmit on falling edge of SCK 
 					if(sck_falling_edge)
