@@ -1,0 +1,77 @@
+CAPI=2:
+name: uat:core:clk_div:1.0.0
+description: frequency based clock divider with sync reset
+
+filesets:
+  rtl:
+    files: [
+      rtl/clk_div.v
+    ] 
+
+  tb:
+    files: [
+      tb/clk_div_tb.sv
+    ]
+    
+targets:
+  default: &default
+    filesets: [rtl]
+    filters: [autotype]
+
+#############################################
+#                SIMULATION                 #
+#############################################
+    
+  sim: &sim
+    <<: *default
+    filesets_append: [tb]
+    toplevel: clk_div_tb
+    parameters: [
+        p_input_freq=50000000,
+        p_output_freq=115200,
+        p_pulses=10
+    ]
+
+  sim_icarus: &sim_icarus
+    <<: *sim
+    description: Simulate the design using IVerilog simulator
+    default_tool: icarus
+    tools:
+      icarus:
+        iverilog_options: [-g2012]
+      
+  sim_icarus_wave:
+    <<: *sim_icarus
+    description: Simulate the design using IVerilog simulator and then launch GTKWave
+    hooks:
+      post_run: [gtkwave]
+      
+#############################################
+#                SYNTHESIS                  #
+#############################################
+
+#############################################
+#                PARAMETERS                 #
+#############################################
+
+parameters:
+  p_input_freq:
+    datatype    : int
+    description : clock input frequency 
+    paramtype   : vlogparam
+  p_output_freq:
+    datatype    : int
+    description : target output frequency
+    paramtype   : vlogparam
+  p_pulses:
+    datatype    : int
+    description : number of tests to complete
+    paramtype   : vlogparam
+
+#############################################
+#                 SCRIPTS                   #
+#############################################
+
+scripts:
+  gtkwave:
+    cmd: [gtkwave, wave.vcd]

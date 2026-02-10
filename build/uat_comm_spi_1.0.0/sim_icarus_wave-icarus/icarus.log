@@ -1,0 +1,2 @@
+FST info: dumpfile wave.vcd opened for output.
+src/uat_comm_spi_1.0.0/tb/spi_tb.sv:69: $finish called at 4250 (1ns)

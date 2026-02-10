@@ -1,0 +1,159 @@
+CAPI=2:
+name: uat:comm:uart:1.0.0
+description: uart tx and rx controller
+
+filesets:
+  rtl:
+    files: [
+      rtl/uart.v,
+      rtl/rx.v,
+      rtl/tx.v,
+    ] 
+    depend: [
+      uat:core:clk_div:1.0.0
+    ]
+
+  tb:
+    files: [
+      tb/uart_tb.sv
+    ]
+    
+  synth:
+    files: [
+      rtl/uart_top.v
+    ]
+    depend: [
+      uat:core:sev_seg:1.0.0
+    ]
+    
+  de1SoC:
+    files: [
+      devices/de1SoC/clk.sdc: {file_type: SDC},
+      devices/de1SoC/pin.tcl
+    ]
+  de10Nano:
+    files: [
+      devices/de10Nano/clk.sdc: {file_type: SDC},
+      devices/de10Nano/pin.tcl
+    ]
+    
+targets:
+  default: &default
+    filesets: [rtl]
+    filters: [autotype]
+
+#############################################
+#                SIMULATION                 #
+#############################################
+    
+  sim: &sim
+    <<: *default
+    filesets_append: [tb]
+    toplevel: uart_tb
+    parameters: [
+      p_baud_freq=115200,
+      p_clk_freq=50000000
+    ]
+
+  sim_icarus: &sim_icarus
+    <<: *sim
+    description: Simulate the design using IVerilog simulator
+    default_tool: icarus
+    tools:
+      icarus:
+        iverilog_options: [-g2012]
+      
+  sim_icarus_wave:
+    <<: *sim_icarus
+    description: Simulate the design using IVerilog simulator and then launch GTKWave
+    hooks:
+      post_run: [gtkwave]
+        
+  sim_ghdl: &sim_ghdl
+    <<: *sim
+    description: Simulate the design using GHDL simulator
+    default_tool: ghdl
+    tools:
+      ghdl:
+        run_options: [--vcd=wave.vcd]
+    
+  sim_ghdl_wave:
+    <<: *sim_ghdl
+    description: Simulate the design using GHDL simulator and then launch GTKWave
+    hooks:
+      post_run: [gtkwave]
+      
+#############################################
+#                SYNTHESIS                  #
+#############################################
+
+  synth: &synth
+    <<: *default
+    toplevel: uart_top
+    filesets_append:
+      [synth]
+    parameters: [
+      p_baud_freq=115200,
+      p_clk_freq=50000000
+    ]
+
+  synth_de1SoC:
+    <<: *synth
+    description: Synthesize the design for de1-SoC board
+    default_tool: quartus
+    filesets_append: 
+      [de1SoC]
+    tools:
+      quartus:
+        family: "Cyclone V"
+        device: "5CSEMA5F31C6"
+        board_device_index: "2"
+        pgm: "quartus"
+
+  synth_de10Nano:
+    <<: *synth
+    description: Synthesize the design for de10-Nano board
+    default_tool: quartus
+    filesets_append: 
+      [de10Nano]
+    tools:
+      quartus:
+        family: "Cyclone V"
+        device: "5CSEBA6U23I7"
+        board_device_index: "2"
+        pgm: "quartus"
+        
+  synth_de23Lite:
+    <<: *synth
+    description: Synthesize the design for de23-Lite board
+    default_tool: quartus
+    filesets_append: 
+      [de10Nano]
+    tools:
+      quartus:
+        family: "Agilex 3"
+        device: "A3CZ135BB18AE7S"
+        pgm: "quartus"
+
+#############################################
+#                PARAMETERS                 #
+#############################################
+
+parameters:
+  p_baud_freq:
+    datatype    : int
+    description : UART baud rate frequency
+    paramtype   : vlogparam
+  p_clk_freq:
+    datatype    : int
+    description : system clock frequency
+    paramtype   : vlogparam
+
+
+#############################################
+#                 SCRIPTS                   #
+#############################################
+
+scripts:
+  gtkwave:
+    cmd: [gtkwave, wave.vcd]

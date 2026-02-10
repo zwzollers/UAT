@@ -1,0 +1,58 @@
+CAPI=2:
+name: uat:comm:spi:1.0.0
+description: spi slave controller
+
+filesets:
+  rtl:
+    files: [
+      rtl/spi.v
+    ] 
+
+  tb:
+    files: [
+      tb/spi_tb.sv
+    ]
+    
+targets:
+  default: &default
+    filesets: [rtl]
+    filters: [autotype]
+
+#############################################
+#                SIMULATION                 #
+#############################################
+    
+  sim: &sim
+    <<: *default
+    filesets_append: [tb]
+    toplevel: spi_tb
+
+  sim_icarus: &sim_icarus
+    <<: *sim
+    description: Simulate the design using IVerilog simulator
+    default_tool: icarus
+    tools:
+      icarus:
+        iverilog_options: [-g2012]
+      
+  sim_icarus_wave:
+    <<: *sim_icarus
+    description: Simulate the design using IVerilog simulator and then launch GTKWave
+    hooks:
+      post_run: [gtkwave]
+      
+#############################################
+#                SYNTHESIS                  #
+#############################################
+
+#############################################
+#                PARAMETERS                 #
+#############################################
+
+#############################################
+#                 SCRIPTS                   #
+#############################################
+
+scripts:
+  gtkwave:
+    cmd: [gtkwave, wave.vcd]

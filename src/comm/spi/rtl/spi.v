@@ -1,6 +1,6 @@
 //Adapted from fpga4fun.com
 //SPI slave module
-module SPI(ar, clk, sck, mosi, miso, cs);
+module spi(ar, clk, sck, mosi, miso, cs);
 	input ar;		//reset
 	input clk;		//system clock
 	input sck;		//SPI master clock

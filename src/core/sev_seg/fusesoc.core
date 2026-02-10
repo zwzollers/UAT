@@ -1,0 +1,69 @@
+CAPI=2:
+name: uat:core:sev_seg:1.0.0
+description: frequency based clock divider with sync reset
+
+filesets:
+  rtl:
+    files: [
+      rtl/sev_seg.v
+    ] 
+
+  tb:
+    files: [
+      tb/sev_seg_tb.sv
+    ]
+    
+targets:
+  default: &default
+    filesets: [rtl]
+    filters: [autotype]
+
+#############################################
+#                SIMULATION                 #
+#############################################
+    
+  sim: &sim
+    <<: *default
+    filesets_append: [tb]
+    toplevel: sev_seg_tb
+    parameters: [
+        p_input_freq=50000000,
+        p_output_freq=115200,
+        p_pulses=10
+    ]
+
+  sim_icarus: &sim_icarus
+    <<: *sim
+    description: Simulate the design using IVerilog simulator
+    default_tool: icarus
+    tools:
+      icarus:
+        iverilog_options: [-g2012]
+      
+  sim_icarus_wave:
+    <<: *sim_icarus
+    description: Simulate the design using IVerilog simulator and then launch GTKWave
+    hooks:
+      post_run: [gtkwave]
+      
+#############################################
+#                SYNTHESIS                  #
+#############################################
+
+#############################################
+#                PARAMETERS                 #
+#############################################
+
+parameters:
+  p_acive:
+    datatype    : int
+    description : active_high == 1 / active_low == 0
+    paramtype   : vlogparam
+
+#############################################
+#                 SCRIPTS                   #
+#############################################
+
+scripts:
+  gtkwave:
+    cmd: [gtkwave, wave.vcd]

@@ -1,0 +1,7 @@
++parameter+uart_tb.p_baud_freq=115200
++parameter+uart_tb.p_clk_freq=50000000
+src/uat_core_clk_div_1.0.0/rtl/clk_div.v
+src/uat_comm_uart_1.0.0/rtl/uart.v
+src/uat_comm_uart_1.0.0/rtl/rx.v
+src/uat_comm_uart_1.0.0/rtl/tx.v
+src/uat_comm_uart_1.0.0/tb/uart_tb.sv
