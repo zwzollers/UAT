@@ -1,5 +1,0 @@
-FST info: dumpfile wave.vcd opened for output.
-ERROR: src/uat_comm_uart_1.0.0/tb/uart_tb.sv:66:   5 != 204
-       Time: 47810  Scope: uart_tb
-Testbench finished OK
-src/uat_comm_uart_1.0.0/tb/uart_tb.sv:69: $finish called at 47810 (1ns)
