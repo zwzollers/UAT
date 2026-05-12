@@ -4,8 +4,8 @@
 set_location_assignment PIN_V11 -to i_clk
 set_location_assignment PIN_AH17 -to i_rst
 
-set_location_assignment PIN_AF4 -to i_rx
-set_location_assignment PIN_AH3 -to o_tx
+set_location_assignment PIN_AF21 -to i_rx
+set_location_assignment PIN_AE22 -to o_tx
 
 set_location_assignment PIN_W15 -to o_rx_data[0]
 set_location_assignment PIN_AA24 -to o_rx_data[1]

@@ -47,7 +47,7 @@
  <parameter name="hideFromIPCatalog" value="false" />
  <parameter name="lockedInterfaceDefinition" value="" />
  <parameter name="maxAdditionalLatency" value="1" />
- <parameter name="projectName" value="LCD_Test.qpf" />
+ <parameter name="projectName" value="" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="0" />
  <parameter name="testBenchDutName" value="" />
@@ -63,13 +63,13 @@
    internal="wind_data_pio.external_connection"
    type="conduit"
    dir="end" />
- <module name="clk_0" kind="clock_source" version="25.1" enabled="1">
+ <module name="clk_0" kind="clock_source" version="24.1" enabled="1">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
   <parameter name="inputClockFrequency" value="0" />
   <parameter name="resetSynchronousEdges" value="NONE" />
  </module>
- <module name="hps_0" kind="altera_hps" version="25.1" enabled="1">
+ <module name="hps_0" kind="altera_hps" version="24.1" enabled="1">
   <parameter name="ABSTRACT_REAL_COMPARE_TEST" value="false" />
   <parameter name="ABS_RAM_MEM_INIT_FILENAME" value="meminit" />
   <parameter name="ACV_PHY_CLK_ADD_FR_PHASE" value="0.0" />
@@ -602,7 +602,7 @@
  <module
    name="wind_data_pio"
    kind="altera_avalon_pio"
-   version="25.1"
+   version="24.1"
    enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
@@ -619,27 +619,27 @@
  </module>
  <connection
    kind="avalon"
-   version="25.1"
+   version="24.1"
    start="hps_0.h2f_lw_axi_master"
    end="wind_data_pio.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x00010000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
- <connection kind="clock" version="25.1" start="clk_0.clk" end="wind_data_pio.clk" />
+ <connection kind="clock" version="24.1" start="clk_0.clk" end="wind_data_pio.clk" />
  <connection
    kind="clock"
-   version="25.1"
+   version="24.1"
    start="clk_0.clk"
    end="hps_0.h2f_lw_axi_clock" />
  <connection
    kind="reset"
-   version="25.1"
+   version="24.1"
    start="clk_0.clk_reset"
    end="wind_data_pio.reset" />
  <connection
    kind="reset"
-   version="25.1"
+   version="24.1"
    start="hps_0.h2f_reset"
    end="clk_0.clk_in_reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />

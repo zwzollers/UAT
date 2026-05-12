@@ -1,5 +1,6 @@
 module ping (
     input           i_clk,
+    input           i_start,
     input           i_rst,
     output          o_trigger,
     input           i_echo,
@@ -26,6 +27,18 @@ always @(posedge w_echo_clk )begin
 end
 
 assign w_echo = r_echo_sync[2];
+
+reg r_prev_start;
+wire w_start_rising = ~r_prev_start && i_start;
+
+always @(posedge w_echo_clk or negedge i_rst) begin
+    if (~i_rst) begin
+        r_prev_start = 1'b0;
+    end
+    else begin
+        r_prev_start = i_start;
+    end
+end
 
 localparam 
     s_idle = 3'd0,
@@ -54,10 +67,12 @@ always @(posedge w_echo_clk or negedge i_rst) begin
     else begin
         case(r_state)
             s_idle: begin
-                r_state = s_start;
-                r_new = 1'b0;
-                r_trigger = 1'b1;
-                r_count = 16'd0;
+                if (w_start_rising) begin
+                    r_state = s_start;
+                    r_new = 1'b0;
+                    r_trigger = 1'b1;
+                    r_count = 16'd0;
+                end
             end
             s_start: begin
                 if (r_count > 20) begin
@@ -95,13 +110,8 @@ always @(posedge w_echo_clk or negedge i_rst) begin
                 end
             end
             s_done: begin
-                if (r_count > 60000) begin
-                    r_state <= s_idle;
-                    r_count <= 16'd0;
-                end 
-                else begin
-                    r_count <= r_count + 1;
-                end
+                r_state <= s_idle;
+                r_count <= 16'd0;
             end
             
             default: begin

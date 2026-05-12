@@ -22,11 +22,23 @@ clk_div #(
     .o_clk(w_baud_clk)
 );
 
-reg r_start_prev = 1'b0;
-wire w_start_rising = ~r_start_prev & i_start;
 
-always @(posedge w_baud_clk) begin
-    r_start_prev <= i_start;
+reg r_baud_clk_prev = 1'b0;
+wire w_baud_clk_rising = ~r_baud_clk_prev & w_baud_clk;
+
+always @(posedge i_clk) begin
+    r_baud_clk_prev <= w_baud_clk;
+end
+
+reg r_start_rising = 1'b0;
+
+always @(posedge i_clk) begin
+    if (i_clk && ~r_start_rising) begin
+        r_start_rising <= i_start;
+    end
+    if (w_baud_clk_rising && r_start_rising) begin
+        r_start_rising <= i_start;
+    end
 end
 
 parameter 
@@ -54,7 +66,7 @@ always @(posedge w_baud_clk or negedge i_rst) begin
     else begin
         case (r_state) 
             s_IDLE: begin
-                if (w_start_rising == 1'b1) begin
+                if (r_start_rising == 1'b1) begin
                     r_state <= s_SEND;
                     r_tx    <= 1'b0;
                     r_data  <= i_data;

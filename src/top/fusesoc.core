@@ -13,11 +13,14 @@ filesets:
     
   synth:
     files: [
-      rtl/top.v
+      rtl/top.v,
+      rtl/cmds.vh: {copyto: "./"}
+      rtl/soc_design.qip: {copyto: "./"}
     ]
     depend: [
       uat:driver:ping:1.0.0,
       uat:comm:uart:1.0.0,
+      uat:comm:cmd_ctrl:1.0.0,
       uat:core:clk_div:1.0.0,
       uat:core:maf:1.0.0
     ]
@@ -88,6 +91,10 @@ targets:
     toplevel: top
     filesets_append:
       [synth]
+    parameters: [
+      p_baud_freq=115200,
+      p_clk_freq=50000000,
+    ]
 
   synth_de1SoC:
     <<: *synth
@@ -119,6 +126,15 @@ targets:
 #                PARAMETERS                 #
 #############################################
 
+parameters:
+  p_baud_freq:
+    datatype    : int
+    description : UART baud rate frequency
+    paramtype   : vlogparam
+  p_clk_freq:
+    datatype    : int
+    description : system clock frequency
+    paramtype   : vlogparam
 
 #############################################
 #                 SCRIPTS                   #

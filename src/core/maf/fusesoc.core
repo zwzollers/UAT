@@ -27,7 +27,7 @@ targets:
     filesets_append: [tb]
     toplevel: maf_tb
     parameters: [
-        p_filter_len=100
+        p_filter_len=16
     ]
 
   sim_icarus: &sim_icarus

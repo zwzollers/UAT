@@ -29,6 +29,7 @@ uart #(
 ) controller (
     .i_clk(i_clk),
     .i_rst(i_rst),
+    .i_loopback(1'b0),
     .o_tx(o_tx),
     .o_tx_done(o_tx_done),
     .i_tx_start(w_new),

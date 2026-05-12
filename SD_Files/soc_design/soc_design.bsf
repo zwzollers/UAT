@@ -1,0 +1,226 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 400 344)
+	(text "soc_design" (rect 167 -1 211 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 328 20 340)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 128 72)(line_width 1))
+	)
+	(port
+		(pt 400 312)
+		(input)
+		(text "memory_oct_rzqin" (rect 0 0 76 12)(font "Arial" (font_size 8)))
+		(text "memory_oct_rzqin" (rect 307 301 403 312)(font "Arial" (font_size 8)))
+		(line (pt 400 312)(pt 256 312)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "mpu_eventi" (rect 0 0 47 12)(font "Arial" (font_size 8)))
+		(text "mpu_eventi" (rect 4 101 64 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 128 112)(line_width 1))
+	)
+	(port
+		(pt 0 200)
+		(input)
+		(text "wind_data_export[31..0]" (rect 0 0 93 12)(font "Arial" (font_size 8)))
+		(text "wind_data_export[31..0]" (rect 4 189 142 200)(font "Arial" (font_size 8)))
+		(line (pt 0 200)(pt 128 200)(line_width 3))
+	)
+	(port
+		(pt 400 72)
+		(output)
+		(text "memory_mem_a[12..0]" (rect 0 0 96 12)(font "Arial" (font_size 8)))
+		(text "memory_mem_a[12..0]" (rect 290 61 404 72)(font "Arial" (font_size 8)))
+		(line (pt 400 72)(pt 256 72)(line_width 3))
+	)
+	(port
+		(pt 400 88)
+		(output)
+		(text "memory_mem_ba[2..0]" (rect 0 0 97 12)(font "Arial" (font_size 8)))
+		(text "memory_mem_ba[2..0]" (rect 288 77 402 88)(font "Arial" (font_size 8)))
+		(line (pt 400 88)(pt 256 88)(line_width 3))
+	)
+	(port
+		(pt 400 104)
+		(output)
+		(text "memory_mem_ck" (rect 0 0 77 12)(font "Arial" (font_size 8)))
+		(text "memory_mem_ck" (rect 313 93 391 104)(font "Arial" (font_size 8)))
+		(line (pt 400 104)(pt 256 104)(line_width 1))
+	)
+	(port
+		(pt 400 120)
+		(output)
+		(text "memory_mem_ck_n" (rect 0 0 88 12)(font "Arial" (font_size 8)))
+		(text "memory_mem_ck_n" (rect 300 109 390 120)(font "Arial" (font_size 8)))
+		(line (pt 400 120)(pt 256 120)(line_width 1))
+	)
+	(port
+		(pt 400 136)
+		(output)
+		(text "memory_mem_cke" (rect 0 0 82 12)(font "Arial" (font_size 8)))
+		(text "memory_mem_cke" (rect 307 125 391 136)(font "Arial" (font_size 8)))
+		(line (pt 400 136)(pt 256 136)(line_width 1))
+	)
+	(port
+		(pt 400 152)
+		(output)
+		(text "memory_mem_cs_n" (rect 0 0 88 12)(font "Arial" (font_size 8)))
+		(text "memory_mem_cs_n" (rect 299 141 389 152)(font "Arial" (font_size 8)))
+		(line (pt 400 152)(pt 256 152)(line_width 1))
+	)
+	(port
+		(pt 400 168)
+		(output)
+		(text "memory_mem_ras_n" (rect 0 0 92 12)(font "Arial" (font_size 8)))
+		(text "memory_mem_ras_n" (rect 295 157 391 168)(font "Arial" (font_size 8)))
+		(line (pt 400 168)(pt 256 168)(line_width 1))
+	)
+	(port
+		(pt 400 184)
+		(output)
+		(text "memory_mem_cas_n" (rect 0 0 93 12)(font "Arial" (font_size 8)))
+		(text "memory_mem_cas_n" (rect 293 173 389 184)(font "Arial" (font_size 8)))
+		(line (pt 400 184)(pt 256 184)(line_width 1))
+	)
+	(port
+		(pt 400 200)
+		(output)
+		(text "memory_mem_we_n" (rect 0 0 89 12)(font "Arial" (font_size 8)))
+		(text "memory_mem_we_n" (rect 295 189 385 200)(font "Arial" (font_size 8)))
+		(line (pt 400 200)(pt 256 200)(line_width 1))
+	)
+	(port
+		(pt 400 216)
+		(output)
+		(text "memory_mem_reset_n" (rect 0 0 99 12)(font "Arial" (font_size 8)))
+		(text "memory_mem_reset_n" (rect 286 205 394 216)(font "Arial" (font_size 8)))
+		(line (pt 400 216)(pt 256 216)(line_width 1))
+	)
+	(port
+		(pt 400 280)
+		(output)
+		(text "memory_mem_odt" (rect 0 0 80 12)(font "Arial" (font_size 8)))
+		(text "memory_mem_odt" (rect 309 269 393 280)(font "Arial" (font_size 8)))
+		(line (pt 400 280)(pt 256 280)(line_width 1))
+	)
+	(port
+		(pt 400 296)
+		(output)
+		(text "memory_mem_dm[1..0]" (rect 0 0 100 12)(font "Arial" (font_size 8)))
+		(text "memory_mem_dm[1..0]" (rect 288 285 402 296)(font "Arial" (font_size 8)))
+		(line (pt 400 296)(pt 256 296)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(output)
+		(text "mpu_evento" (rect 0 0 50 12)(font "Arial" (font_size 8)))
+		(text "mpu_evento" (rect 4 117 64 128)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 128 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(output)
+		(text "mpu_standbywfe[1..0]" (rect 0 0 88 12)(font "Arial" (font_size 8)))
+		(text "mpu_standbywfe[1..0]" (rect 4 133 124 144)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 128 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(output)
+		(text "mpu_standbywfi[1..0]" (rect 0 0 84 12)(font "Arial" (font_size 8)))
+		(text "mpu_standbywfi[1..0]" (rect 4 149 124 160)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 128 160)(line_width 3))
+	)
+	(port
+		(pt 400 232)
+		(bidir)
+		(text "memory_mem_dq[15..0]" (rect 0 0 101 12)(font "Arial" (font_size 8)))
+		(text "memory_mem_dq[15..0]" (rect 284 221 404 232)(font "Arial" (font_size 8)))
+		(line (pt 400 232)(pt 256 232)(line_width 3))
+	)
+	(port
+		(pt 400 248)
+		(bidir)
+		(text "memory_mem_dqs[1..0]" (rect 0 0 101 12)(font "Arial" (font_size 8)))
+		(text "memory_mem_dqs[1..0]" (rect 284 237 404 248)(font "Arial" (font_size 8)))
+		(line (pt 400 248)(pt 256 248)(line_width 3))
+	)
+	(port
+		(pt 400 264)
+		(bidir)
+		(text "memory_mem_dqs_n[1..0]" (rect 0 0 112 12)(font "Arial" (font_size 8)))
+		(text "memory_mem_dqs_n[1..0]" (rect 271 253 403 264)(font "Arial" (font_size 8)))
+		(line (pt 400 264)(pt 256 264)(line_width 3))
+	)
+	(drawing
+		(text "clk" (rect 113 43 244 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 133 67 284 144)(font "Arial" (color 0 0 0)))
+		(text "memory" (rect 257 43 550 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "mem_a" (rect 221 67 472 144)(font "Arial" (color 0 0 0)))
+		(text "mem_ba" (rect 216 83 468 176)(font "Arial" (color 0 0 0)))
+		(text "mem_ck" (rect 216 99 468 208)(font "Arial" (color 0 0 0)))
+		(text "mem_ck_n" (rect 205 115 458 240)(font "Arial" (color 0 0 0)))
+		(text "mem_cke" (rect 211 131 464 272)(font "Arial" (color 0 0 0)))
+		(text "mem_cs_n" (rect 205 147 458 304)(font "Arial" (color 0 0 0)))
+		(text "mem_ras_n" (rect 201 163 456 336)(font "Arial" (color 0 0 0)))
+		(text "mem_cas_n" (rect 200 179 454 368)(font "Arial" (color 0 0 0)))
+		(text "mem_we_n" (rect 204 195 456 400)(font "Arial" (color 0 0 0)))
+		(text "mem_reset_n" (rect 193 211 452 432)(font "Arial" (color 0 0 0)))
+		(text "mem_dq" (rect 216 227 468 464)(font "Arial" (color 0 0 0)))
+		(text "mem_dqs" (rect 211 243 464 496)(font "Arial" (color 0 0 0)))
+		(text "mem_dqs_n" (rect 200 259 454 528)(font "Arial" (color 0 0 0)))
+		(text "mem_odt" (rect 213 275 468 560)(font "Arial" (color 0 0 0)))
+		(text "mem_dm" (rect 213 291 462 592)(font "Arial" (color 0 0 0)))
+		(text "oct_rzqin" (rect 214 307 482 624)(font "Arial" (color 0 0 0)))
+		(text "mpu" (rect 104 83 226 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "eventi" (rect 133 107 302 224)(font "Arial" (color 0 0 0)))
+		(text "evento" (rect 133 123 302 256)(font "Arial" (color 0 0 0)))
+		(text "standbywfe" (rect 133 139 326 288)(font "Arial" (color 0 0 0)))
+		(text "standbywfi" (rect 133 155 326 320)(font "Arial" (color 0 0 0)))
+		(text "wind_data" (rect 69 171 192 355)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 133 195 302 400)(font "Arial" (color 0 0 0)))
+		(text " soc_design " (rect 349 328 770 666)(font "Arial" ))
+		(line (pt 128 32)(pt 256 32)(line_width 1))
+		(line (pt 256 32)(pt 256 328)(line_width 1))
+		(line (pt 128 328)(pt 256 328)(line_width 1))
+		(line (pt 128 32)(pt 128 328)(line_width 1))
+		(line (pt 129 52)(pt 129 76)(line_width 1))
+		(line (pt 130 52)(pt 130 76)(line_width 1))
+		(line (pt 255 52)(pt 255 316)(line_width 1))
+		(line (pt 254 52)(pt 254 316)(line_width 1))
+		(line (pt 129 92)(pt 129 164)(line_width 1))
+		(line (pt 130 92)(pt 130 164)(line_width 1))
+		(line (pt 129 180)(pt 129 204)(line_width 1))
+		(line (pt 130 180)(pt 130 204)(line_width 1))
+		(line (pt 0 0)(pt 400 0)(line_width 1))
+		(line (pt 400 0)(pt 400 344)(line_width 1))
+		(line (pt 0 344)(pt 400 344)(line_width 1))
+		(line (pt 0 0)(pt 0 344)(line_width 1))
+	)
+)

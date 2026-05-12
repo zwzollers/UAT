@@ -4,6 +4,7 @@ module uart #(
 ) (
     input           i_clk,
     input           i_rst,
+    input           i_loopback,
 
     output          o_tx,
     output          o_tx_done,
@@ -28,13 +29,16 @@ rx #(
     .o_data(o_rx_data)
 );
 
+wire w_tx;
+assign o_tx = (i_loopback) ? i_rx : w_tx;
+
 tx #(
     .p_clk_freq(p_clk_freq),
     .p_baud_freq(p_baud_freq)
 ) transmitter (
     .i_clk(i_clk),
     .i_rst(i_rst),
-    .o_tx(o_tx),
+    .o_tx(w_tx),
     .o_done(o_tx_done),
     .i_start(i_tx_start),
     .i_data(i_tx_data)

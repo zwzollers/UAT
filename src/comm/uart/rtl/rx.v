@@ -66,11 +66,11 @@ always @(posedge w_baud_clk or negedge i_rst) begin
             s_PARITY: begin
                 r_state <= s_STOP1;
                 r_parity <= i_rx;
-                r_new <= 1'b1;
             end
 
             s_STOP1: begin
-                r_state <= s_STOP2; 
+                r_state <= s_IDLE; 
+                r_new <= 1'b1;
             end
 
             s_STOP2: begin
